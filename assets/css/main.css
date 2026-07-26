@@ -71,11 +71,6 @@ a {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
 }
 
 .hero-media {
@@ -114,24 +109,31 @@ a {
     linear-gradient(to right, rgba(5, 5, 5, 0.55) 0%, transparent 55%);
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
+.intro {
+  background: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.intro-content {
   max-width: 640px;
 }
 
-.hero-content h1 {
+.intro-content h1 {
   font-family: var(--font-serif);
   font-weight: 400;
   font-size: clamp(1.1rem, 2vw, 1.3rem);
   line-height: 1.5;
 }
 
-.hero-content h1 strong {
+.intro-content h1 strong {
   font-weight: 700;
 }
 
-.hero-content .divider {
+.intro-content .divider {
   height: 1.5rem;
 }
 
