@@ -1,0 +1,21 @@
+# MODOFORMA
+
+> MODOFORMA is a Toronto-based creative engine that collaborates with interior designers, architects, and developers, shaping concepts into experiences.
+
+## About
+
+MODOFORMA partners with interior designers, architects, and developers to take concepts from idea through refinement into finished experiences. Their philosophy: design is not decoration, but a way of thinking — a way of living. Related/partner brands: colorlab. (design management), MODDDO, NERO Cucine, Canova.
+
+- Location: 1411-A Dufferin St., Toronto, Ontario, Canada
+- Email: start@modoforma.com
+- Phone: +416-450-9525
+- Hours: By appointment only
+- Instagram: https://www.instagram.com/modoforma/
+
+## Pages
+
+- [Homepage](https://modoforma.com/) — single-page site.
+
+## Notes for AI crawlers
+
+This is the full, current content of the modoforma.com website. There are no additional subpages. For business inquiries, use the contact email or phone number above.
