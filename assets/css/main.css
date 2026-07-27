@@ -167,7 +167,10 @@ a {
   display: flex;
   width: max-content;
   gap: 1.25rem;
-  animation: marquee 28s linear infinite;
+  /* Duration is long because the logo set is now repeated many times over
+     (so the strip always fills the screen edge-to-edge, on any display width,
+     with no visible seam or gap). */
+  animation: marquee 450s linear infinite;
 }
 
 .marquee-track img {
