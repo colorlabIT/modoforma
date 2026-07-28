@@ -58,7 +58,23 @@ body {
   width: 100%;
   /* 2x maxWidth (see flipbook.js) -- the widest a two-page spread can get. */
   max-width: 1600px;
+  max-height: 85vh;
   margin: 0 auto;
+  /* Without an explicit height, the container only gets StPageFlip's small
+     inline min-height floor, so the book renders tiny regardless of
+     available screen space, and the canvas's own white background shows
+     past the page edges. This ratio must match the single-page width/height
+     in flipbook.js exactly, so the container is always exactly page-shaped
+     with no leftover white/black mismatch. */
+  aspect-ratio: 700 / 495;
+}
+
+/* Matches the width threshold (2x minWidth) where StPageFlip switches to a
+   two-page spread -- must stay in sync with flipbook.js. */
+@media (min-width: 720px) {
+  .fb-book {
+    aspect-ratio: 1400 / 495;
+  }
 }
 
 /* Prevent easy image saving via drag/select; right-click is disabled via JS */
