@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../../../assets/fonts/clash-display-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: Georgia, 'Times New Roman', serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.fb-header {
+  text-align: center;
+  padding: 2rem 1.5rem 1rem;
+}
+
+.fb-logo {
+  height: 36px;
+  width: auto;
+}
+
+.fb-subtitle {
+  margin-top: 0.75rem;
+  font-family: 'Clash Display', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.fb-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 1rem 2rem;
+}
+
+.fb-book {
+  width: 100%;
+  /* Must stay below 2x the PageFlip minWidth (see flipbook.js) so the
+     library always renders a single page, never a fake two-page spread. */
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* Prevent easy image saving via drag/select; right-click is disabled via JS */
+.fb-book img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.fb-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.fb-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.fb-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.fb-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.fb-indicator {
+  font-family: 'Clash Display', Arial, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.7);
+  min-width: 4.5rem;
+  text-align: center;
+}
+
+.fb-footer {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.fb-footer a {
+  color: inherit;
+}
+
+@media (max-width: 600px) {
+  .fb-book {
+    max-width: 100%;
+  }
+}
