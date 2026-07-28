@@ -56,17 +56,9 @@ body {
 
 .fb-book {
   width: 100%;
-  /* Must stay below 2x the PageFlip minWidth for the active profile (see
-     flipbook.js) so the library always renders a single page, never a fake
-     two-page spread. This breakpoint must match the WIDE_QUERY there. */
-  max-width: 640px;
+  /* 2x maxWidth (see flipbook.js) -- the widest a two-page spread can get. */
+  max-width: 1600px;
   margin: 0 auto;
-}
-
-@media (min-width: 800px) {
-  .fb-book.fb-book--wide {
-    max-width: 1200px;
-  }
 }
 
 /* Prevent easy image saving via drag/select; right-click is disabled via JS */
@@ -125,10 +117,4 @@ body {
 
 .fb-footer a {
   color: inherit;
-}
-
-@media (max-width: 600px) {
-  .fb-book {
-    max-width: 100%;
-  }
 }
