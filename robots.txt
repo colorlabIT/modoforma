@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /dejagerdesigninc/
 
 Sitemap: https://modoforma.com/sitemap.xml

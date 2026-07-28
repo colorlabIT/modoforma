@@ -34,7 +34,8 @@ body {
   width: auto;
 }
 
-.fb-subtitle {
+.fb-back {
+  display: inline-block;
   margin-top: 0.75rem;
   font-family: 'Clash Display', Arial, sans-serif;
   font-weight: 600;
@@ -42,6 +43,12 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.fb-back:hover {
+  color: #ffffff;
 }
 
 .fb-main {
